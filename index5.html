@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/star.png">
+<style>
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<<a href="index2.html"> O autoru</a>
+			<a href="index3.html">Prepričano delo</a>
+			<a href="index4.html">Slike i opis likova iz dela </a>
+			<a href="index.html" id="blog">Početna </a>
+			<a href="index5.html">Vas utisak o knjizi </a>
+</nav>
+
+<div id="title">
+<h1>Kontakt</h1>
+<h2>Na ovoj strani mozete stupiti u kontakt sa nama</h2>
+
+</div>
+</header>
+
+<p>Upisite Informacije </p>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Ime</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Prezime</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Zemlja</label>
+    <select id="country" name="country">
+      <option value="australia">Srbija<option>
+      <option value="canada">BiH</option>
+      <option value="usa">Crna Gora</option>
+    </select>
+
+    <label for="subject">Napisite kompliment ili kritiku</label>
+    <textarea id="subject" name="subject" placeholder="Napisite nesto " style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div>
+</div>
+</section>
+
+
+
+</body>
+</html>

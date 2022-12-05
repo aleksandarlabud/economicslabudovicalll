@@ -1,3 +1,110 @@
+ <style type="text/css">
+
+   * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+            /* Style the images inside the grid */
+            .column img {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+
+                .column img:hover {
+                    opacity: 1;
+                }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+.container {
+	max-width: 400px;
+	max-height: 400px;
+	margin: auto;
+	border: 3px solid orange;
+	position: center;
+	display: none;
+}
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+           *{
+               box-sizing: border-box;
+           }
+
+.goree {
+	position: center;
+	background-color: #333;
+	overflow: hidden;
+}
+	.goree a {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		color: #03adfc;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 30px;
+	}
+
+.galerija {
+	
+	width: 80%;
+	height: 800px;
+	overflow: hidden;
+	border: 10px solid black;
+	margin: 20px auto;
+}
+#glavna img {
+	display: block;  
+margin-left: auto;  
+margin-right: auto;  
+	width: auto;
+	height: 550px;
+	border: 2px solid black;
+}
+           #dole img{
+               width:10%;
+               height: 75px;
+               border: 2px solid black;
+               opacity: .7;
+               cursor:pointer;
+           }
+
 @font-face {
 	src: url('fonts/segoeui.ttf');
 	font-family: "regular";
@@ -23,29 +130,33 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	
 }
 
 nav {
 	text-align: center;
 	padding-top: 20px;
-	position: fixed;
+	position: absolute;
 	width: 100%;
+
 }
 
-nav a {
-	color: white;
-	text-decoration: none;
-	margin: 0px 10px;
-	font-size: 20px;
-	font-family: "semilight";
-	padding-bottom: 5px;
-	transition: 0.5s;
-	border-bottom: 2px solid rgba(255,255,255,0);
-}
+	nav a {
+		color: white;
+		text-decoration: none;
+		margin: 0px 10px;
+		font-size: 20px;
+		font-family: "semilight";
+		padding-bottom: 5px;
+		transition: 0.5s;
+		border-bottom: 2px solid rgba(255,255,255,0);
+		
+	}
 
-nav a:hover {
-	border-bottom: 2px solid orange;
-}
+		nav a:hover {
+			border-bottom: 2px solid yellow;
+			
+		}
 
 #blog {
 	color: white;
@@ -90,15 +201,14 @@ nav a:hover {
 }
 
 #about {
-	border-top: 25px dotted #387488;
-	border-bottom: 25px dotted #387488;
-
+	border-top: 25px solid orange;
+	border-bottom: 25px solid orange;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 .wrap {
-	max-width: 960px;
+	max-width: 1000px;
 	margin: auto;
 }
 
@@ -147,15 +257,15 @@ nav a:hover {
 	background-attachment: fixed;
 }
 
-#attractions h2 {
-	font-family: "semilight";
-	margin: 0px;
-	font-weight: 100;
-	color: white;
-	font-size: 40px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+	#attractions h2 {
+		font-family: "semilight";
+		margin: 0px;
+		font-weight: 100;
+		color: sandybrown;
+		font-size: 40px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 .wrap-attractions {
 	max-width: 960px;
@@ -171,7 +281,7 @@ nav a:hover {
 
 .att {
 	flex-basis: 32%;
-	background-color: white;
+	background-color: darkorange;
 	padding: 20px;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.3);
@@ -200,3 +310,4 @@ nav a:hover {
 	text-align: center;
 	font-size: 20px;
 }
+  </style>
